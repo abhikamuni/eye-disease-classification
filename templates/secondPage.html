@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Disease Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <h1>Eye Disease Classification</h1>
+            <form action="/secondPage" method="post" enctype="multipart/form-data">
+                <label for="myFile">Select an image to upload:</label>
+                <input type="file" id="myFile" name="file" accept="image/*">
+                <button type="submit">Upload</button>
+            </form>
+            <main>
+                <section>
+                    <h2>Prediction Result:</h2>
+                    {% if prediction %}
+                        <p>{{ prediction }}</p>
+                    {% endif %}
+                </section>
+                <section>
+                    
+                    {% if uploaded_image %}
+                        <img src="{{ url_for('static', filename='uploads/' + uploaded_image) }}" alt="Uploaded Image" class="result-image">
+                    {% endif %}
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

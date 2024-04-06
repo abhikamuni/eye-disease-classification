@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-image: url('project1.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.6); /* Transparent white background */
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: #f0f0f0;
+}
+  
+header {
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    text-align: center; 
+}
+  
+  
+  
+  main {
+    padding: 20px; 
+    text-align:center;
+    
+  }
+  h1 {
+    margin-bottom: 15px; 
+    font-size: 2em; 
+    color: rgb(0, 0, 0);
+}
+  p {
+    margin-bottom: 15px; 
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+ 
+}
+  
+  button {
+    background-color: #213a8d; 
+    color: white;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    
+  }
+  
+  button:hover { /* Button hover effect */
+    background-color: #3e8e41; /* Darken the button color on hover */
+  }
+  
